@@ -85,7 +85,7 @@ body {
 
 .socialbox {
   display: flex;
-  height: 92vh;
+  height: 92%;
   flex-direction: column;
   width: 8rem;
   position: absolute;
@@ -97,6 +97,7 @@ body {
 .socialicons {
   padding: 0.6rem;
   transform: rotate(90deg);
+  opacity: 0.9;
   color: #212121;
   font-size: 2.4rem;
   vertical-align: middle;
@@ -125,4 +126,69 @@ body {
   white-space: nowrap;
   position: relative;
   color: #212121;
+}
+
+@media (max-width: 1800px) {
+
+  .bigmessage {
+    font-size: 11rem;
+    line-height: 12rem;
+  }
+
+  .smallmessage {
+    line-height: 2.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .clockindicators {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bigmessage {
+    font-size: 10rem;
+    line-height: 11.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .holder1 {
+    max-width: 50vw;
+  }
+
+  .bigmessage {
+    font-size: 7.5rem;
+    line-height: 8.5rem;
+  }
+
+  .smallmessage {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .clockindicators {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 1.2rem;
+  }
+
+  .bigmessage {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .smallmessage {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+  }
 }
