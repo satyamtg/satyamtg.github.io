@@ -4,7 +4,7 @@ var countdownTimer = setInterval(updateClock, 1000);
 
 //Function to compute time
 function updateClock() {
-  var deadline = new Date("Jan 16, 2019 00:00:00").getTime();
+  var deadline = new Date("Mar 25, 2019 00:00:00").getTime();
   var now = new Date().getTime();
   var diff = deadline - now;
   var days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -17,7 +17,6 @@ function updateClock() {
   document.getElementById("second").innerHTML =seconds;
   if (diff < 0) {
     clearInterval(countdownTimer);
-    document.getElementById("demo").innerHTML = "TIME UP";
     document.getElementById("day").innerHTML ='0';
     document.getElementById("hour").innerHTML ='0';
     document.getElementById("minute").innerHTML ='0' ;
