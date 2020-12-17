@@ -4,7 +4,7 @@ var countdownTimer = setInterval(updateClock, 1000);
 
 //Function to compute time
 function updateClock() {
-  var deadline = new Date("Oct 16, 2020 00:00:00").getTime();
+  var deadline = new Date("Jan 1, 2021 00:00:00").getTime();
   var now = new Date().getTime();
   var diff = deadline - now;
   var days = Math.floor(diff / (1000 * 60 * 60 * 24));
