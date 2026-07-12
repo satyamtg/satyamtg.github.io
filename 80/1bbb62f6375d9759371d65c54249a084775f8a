@@ -1,0 +1,185 @@
+src/components/sections/Contact/index.ts
+  s_fccc7a413c6810::t_c3faa2191c82fe 1
+tsconfig.json
+  s_fccc7a413c6810::t_ce503422a65caf 1-25
+src/App.tsx
+  s_fccc7a413c6810::t_afab50d64c435e 1-18
+src/main.tsx
+  s_fccc7a413c6810::t_4c3211734868bf 1-13
+.gitignore
+  h_b23a6a8439c0dd 1
+src/components/layout/Layout.tsx
+  s_fccc7a413c6810::t_bda76fd8a9b876 3-4,6-7,13-14,29-41,43-47
+  s_fccc7a413c6810::t_780b0037121e0d 15,26
+  s_fccc7a413c6810::t_c6d94b62309639 1-2,5,8-12,16-24,42,48-52
+  s_fccc7a413c6810::t_091d7dad8ca1af 25,27-28
+.yarnrc.yml
+  s_fccc7a413c6810::t_8ffb9063d8eb01 1-3
+src/lib/cn.ts
+  s_fccc7a413c6810::t_f776a88a53849d 1-5
+src/components/sections/Hero/ParticleField.tsx
+  s_fccc7a413c6810::t_98c2ec012c1e62 6-14,16-24,26-31,71,92,119,123,125-128,131,135,183,195-199
+  s_fccc7a413c6810::t_a4b508f0fe8610 34,62,193
+  s_fccc7a413c6810::t_94133e744ac098 2,36,43-55,89-91,93-95,124,130,143
+  s_fccc7a413c6810::t_4eae04b91d894d 170-174
+  s_fccc7a413c6810::t_358dd9b76a5923 1,3-4,32,39-41,56,61,80,83-86,185-188,190-191,194,200-201,203-209
+  s_fccc7a413c6810::t_0f121873e0dee8 192
+  s_fccc7a413c6810::t_12efe03eab4260 5,15,25,33,35,37-38,74-77,100-103,105-110,117,129,133,138-142,144-169
+  s_fccc7a413c6810::t_a7e6e3f292e189 57-60,63-70,72-73,78-79,82,98-99,104,111-116,118,120-122,132,134,136-137,175-177,181,184,189
+  s_fccc7a413c6810::t_7bb73f08925b5c 81,87-88,96-97,178,180,202
+  s_fccc7a413c6810::t_a6db4c07536e8b 42,179,182
+src/components/sections/About/About.tsx
+  s_fccc7a413c6810::t_888b8189143c1f 3,5,7-20,23-46,48-126,128-157,159-185
+  s_fccc7a413c6810::t_53788048b18141 1-2,4,6,21-22,186-187
+  s_fccc7a413c6810::t_1f34a7b8debfc5 47,127,158
+src/lib/gsap.ts
+  s_fccc7a413c6810::t_17b29971ce5791 1-7
+src/components/sections/Projects/ProjectCard.tsx
+  s_fccc7a413c6810::t_8b24ef00281bce 5,12-20,22-28,33-42,44-47,49-50,52-81
+  s_fccc7a413c6810::t_9bbb00069830e8 1,3-4,6-11,21,43,48,51,82-83
+  s_fccc7a413c6810::t_c20ed7d9320970 29-32
+  s_fccc7a413c6810::t_a4aa549bca4fc8 2
+src/lib/palette.ts
+  s_fccc7a413c6810::t_22a3bdc80c58db 1-28
+index.html
+  s_fccc7a413c6810::t_88d14c4e538450 1-2,4-32,35-36,38
+src/components/ui/MagneticButton/MagneticButton.tsx
+  s_fccc7a413c6810::t_eb2dd011691093 1,3-6,10-23,32-54
+  s_fccc7a413c6810::t_54a0e368331691 2,7-9,27-28,30
+  s_fccc7a413c6810::t_b10919223140fc 24-26,29,31
+src/components/sections/Work/index.ts
+  s_fccc7a413c6810::t_bb4220358309df 1
+src/components/sections/Projects/Projects.tsx
+  s_fccc7a413c6810::t_1193c2404ace77 11,13-14
+  s_fccc7a413c6810::t_2e5397cc25f960 20-32
+  s_fccc7a413c6810::t_b058eed16a4c30 1-10,12,15-19,33-38
+src/hooks/useIntersectionObserver.ts
+  s_fccc7a413c6810::t_61b76a385cf7a9 9
+  s_fccc7a413c6810::t_00259c6730a4ab 1-8,10-36
+src/components/cursor/index.ts
+  s_fccc7a413c6810::t_446bb5141c87f2 1
+src/components/ui/AnimatedText/AnimatedText.tsx
+  s_fccc7a413c6810::t_93b18afdf43a5b 1-69
+postcss.config.js
+  s_fccc7a413c6810::t_9f4b082ab4591a 1-6
+src/components/sections/Hero/index.ts
+  s_fccc7a413c6810::t_692e233de094cb 1
+src/components/sections/Projects/index.ts
+  s_fccc7a413c6810::t_0602dd4728c380 1
+src/types/index.ts
+  s_fccc7a413c6810::t_6cbfacfda10052 1-15,22-24,26,29,31-81,87-92
+  s_fccc7a413c6810::t_0922b9e9211542 16-21,25,27-28,30
+  s_fccc7a413c6810::t_eea709a1072eba 82-86
+src/components/layout/index.ts
+  s_fccc7a413c6810::t_afbcde06b94bc1 1
+.github/workflows/deploy.yml
+  s_fccc7a413c6810::t_89fd36f69632dd 1-27,29-30,32-33,35-36,38-48
+  s_fccc7a413c6810::t_fc0712bdc05064 28,31,34,37
+src/hooks/useMagneticEffect.ts
+  s_fccc7a413c6810::t_c2d9335c561256 1-8,10-40
+  s_fccc7a413c6810::t_907a793424dbdf 9
+src/components/ui/MetricCard/index.ts
+  s_fccc7a413c6810::t_e76b36fa8b0cbe 1
+src/components/ui/SectionLabel/index.ts
+  s_fccc7a413c6810::t_25500e6eee1087 1
+vite.config.ts
+  s_fccc7a413c6810::t_fdf9b139f51e71 2,10
+  s_fccc7a413c6810::t_cabb0041bbbb6c 1,3-9,11-26
+src/hooks/useCountUp.ts
+  s_fccc7a413c6810::t_0a7d399f69b4c2 1-13,15-58
+  s_fccc7a413c6810::t_6439e73a5b276d 14
+package.json
+  s_fccc7a413c6810::t_2b6d7f049ee43d 1-36
+  s_fccc7a413c6810::t_1f2735fb776467 37
+src/data/portfolio.ts
+  s_fccc7a413c6810::t_2d65ab8c3ad0cc 79-103
+  s_fccc7a413c6810::t_260778ca39aada 9,11,16,20-22,47-49,53,56-73,75-76,106,109,113-114
+  s_fccc7a413c6810::t_5ecdd3b42cae38 1-8,10,12,14-15,17-19,23,46,50,52,54-55,74,77-78,104-105,107-108,110-112,115-127
+  s_fccc7a413c6810::t_b150836da99c71 13
+  s_fccc7a413c6810::t_85e5e732b91597 24-45,51
+src/lib/lenis.ts
+  s_fccc7a413c6810::t_c86cb598a84080 1-41
+src/components/cursor/Cursor.tsx
+  s_fccc7a413c6810::t_a24e744497c6bd 1-102,104-105,108-111,114-120,122-125,128-134
+  s_fccc7a413c6810::t_1de8bcbfc3f5f6 103,106-107,112-113,121,126-127
+src/components/ui/AnimatedText/index.ts
+  s_fccc7a413c6810::t_4870389289a7ae 1
+src/components/sections/Hero/Hero.tsx
+  s_fccc7a413c6810::t_bd4e8557b1b497 8,13-15,20,25-26,32-55,58,62,71,76-80,86,88,90,95,97,130-134
+  s_fccc7a413c6810::t_44cac9700f74fd 1-2,4-7,101-107,109,111-114,121-122,136-146,148,150-153,161,164-175,178,186-189,191-195,197-198,200,214-215,221-223,225-240,242-248
+  s_fccc7a413c6810::t_5593771394c32e 120,149,155-160,162-163,176
+  s_fccc7a413c6810::t_f4d79bcb324c01 177
+  s_fccc7a413c6810::t_97dfe6c8b94c88 154
+  s_fccc7a413c6810::t_ce9b7260ce69fc 3,9-12,16-19,21-24,27-31,56-57,59-61,63-70,72-75,81-85,87,89,91-94,96,98-100,108,123-124,126-129,135,147,196,199,201-205,207-213,241
+  s_fccc7a413c6810::t_52e615fa4ab2bc 179-185,217,219-220,224
+  s_fccc7a413c6810::t_1ec478a00452ad 110,115-119
+  s_fccc7a413c6810::t_f3e61970674d57 125,206,216
+  s_fccc7a413c6810::t_d65644ede721b6 190
+  s_fccc7a413c6810::t_9e665cc40f2437 218
+src/components/ui/SectionLabel/SectionLabel.tsx
+  s_fccc7a413c6810::t_700bff8469856b 5-6,10-22,24-28
+  s_fccc7a413c6810::t_fdfe7612f6841a 1-4,7-9,23,29-32
+src/components/ui/MetricCard/MetricCard.tsx
+  s_fccc7a413c6810::t_43b35c440ca49e 1-5,21,23,45-48,51,56,65-71
+  s_fccc7a413c6810::t_e136020a8df74f 6-20,22,24-44,49-50,52-55,57-63
+  s_fccc7a413c6810::t_503f2d863d4a63 64
+src/components/sections/Work/WorkCard.tsx
+  s_fccc7a413c6810::t_7cf5efc9ba7777 74,78
+  s_fccc7a413c6810::t_83cbe96784720c 6,20-32,34-66,68-69,72-73,75-77,79-86,88-90,92,96-132,136-219,221-231,234-236
+  s_fccc7a413c6810::t_d306b6c5051e67 220
+  s_fccc7a413c6810::t_8fae5292b1004f 1-2,4-5,7-10,13-14,70-71,135,232-233,237-238
+  s_fccc7a413c6810::t_7e202023b08ab2 3,11-12,15-19,67,87,91,93-95,133-134
+  s_fccc7a413c6810::t_8d45abd8cbc4ae 33
+src/components/sections/About/index.ts
+  s_fccc7a413c6810::t_97fed666726c30 1
+src/components/sections/Contact/Contact.tsx
+  s_fccc7a413c6810::t_fa8ea0321760e7 111-112,123
+  s_fccc7a413c6810::t_c77fba116ef5e7 37-44,63,95,113-114
+  s_fccc7a413c6810::t_7ed35f70f8ff9d 64-65
+  s_fccc7a413c6810::t_ace89ca2f3a591 1-36,45-62,66-94,96-110,115-122,124-130
+src/components/sections/Work/Work.tsx
+  s_fccc7a413c6810::t_23ed9b37212442 3,8-11,15-16
+  s_fccc7a413c6810::t_31ba300ad447e0 12-14,17-25
+  s_fccc7a413c6810::t_6795b6d0680907 1-2,4-6,27-31
+  s_fccc7a413c6810::t_1c8eac93c9b856 7,26
+tailwind.config.ts
+  s_fccc7a413c6810::t_3c7040910c7706 44
+  s_fccc7a413c6810::t_38c64ba2644ae9 15,20,26,28-29,35-36,38-39,42-43
+  s_fccc7a413c6810::t_3ded63e910eba1 8-14,16-19,21-25,27,30-34,37,40-41
+  s_fccc7a413c6810::t_5e412831d0c5e5 1-7,45-54
+src/styles/globals.css
+  s_fccc7a413c6810::t_ef2b17082c5972 29,41-43,46-47,102-111,138,146,148-149,151-152,158,164,167,172,177-179,183-185,189,194,200,205,207,211,225,247,250,252
+  s_fccc7a413c6810::t_2963a30bae7bb5 17-18,77,82,85-86,93,97,132,139,145,147,150,156-157,166,168-171,173-176,181-182,190,195,199,201,203-204,206,210,212-217
+  s_fccc7a413c6810::t_8e70b684ea9f28 32
+  s_fccc7a413c6810::t_aa5bc0e027c398 1,75,81,84,144,161-162,196-198,218,220-222,224,226-227,232-233,237
+  s_fccc7a413c6810::t_0853feebdb5ca9 40
+  s_fccc7a413c6810::t_cc7aab8ae2ffdf 28,76,79-80,83,87-89,92,95-96,99,121,133-135
+  s_fccc7a413c6810::t_8fca0a98baa421 52-74,78,94,100-101,112-120,122-130,143,153-155,159-160,163,180,186,202,208,219,223,228-231,234-236,255,257-269
+  s_fccc7a413c6810::t_da5f1a7658bdd6 2-16,19-27,30-31,33,44-45,48-51,90-91,131,209,238,240,242-246,248-249,251,253-254,256,270-271
+  s_fccc7a413c6810::t_67b25722fc227e 34-39
+  s_fccc7a413c6810::t_81e94f8a64678a 98,136-137,140-142,165,187-188,191-193
+  s_fccc7a413c6810::t_dd61a2eea61215 239,241
+src/components/ui/MagneticButton/index.ts
+  s_fccc7a413c6810::t_7d8f3015055ba1 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "801bbb62f6375d9759371d65c54249a084775f8a",
+  "prompts": {},
+  "humans": {
+    "h_b23a6a8439c0dd": {
+      "author": "unknown"
+    }
+  },
+  "sessions": {
+    "s_fccc7a413c6810": {
+      "agent_id": {
+        "tool": "DeputyDev",
+        "id": "455177",
+        "model": "GEMINI_3_POINT_5_FLASH"
+      },
+      "human_author": "satyamtg <io.satyamtg@gmail.com>"
+    }
+  }
+}
