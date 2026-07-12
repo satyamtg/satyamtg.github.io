@@ -1,0 +1,21 @@
+.github/workflows/deploy.yml
+  s_fccc7a413c6810::t_31090f043824dc 5
+.gitignore
+  s_fccc7a413c6810::t_cc2382118b28aa 2-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "ff571784e03ae20bdbc45d504cbf01b2f3563fc1",
+  "prompts": {},
+  "sessions": {
+    "s_fccc7a413c6810": {
+      "agent_id": {
+        "tool": "DeputyDev",
+        "id": "455177",
+        "model": "CLAUDE_4_POINT_6_SONNET"
+      },
+      "human_author": "satyamtg <io.satyamtg@gmail.com>"
+    }
+  }
+}
