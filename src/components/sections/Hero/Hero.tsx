@@ -1,6 +1,6 @@
 import { META } from '@/data/portfolio';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
 
@@ -9,6 +9,8 @@ const Hero: React.FC = () => {
   const [lastName, setLastName] = useState('KUMAR');
   const [isTG, setIsTG] = useState(false);
   const [isScrambling, setIsScrambling] = useState(false);
+  const [isVariantOpen, setIsVariantOpen] = useState(false);
+  const variantRef = useRef<HTMLDivElement>(null);
 
   // Dual-channel dynamic scramble decoder
   const triggerDualScramble = (targetFirst: string, targetLast: string) => {
@@ -91,6 +93,18 @@ const Hero: React.FC = () => {
     }
   };
 
+  // Close variant dropdown on outside click
+  useEffect(() => {
+    if (!isVariantOpen) return;
+    const onOutsideClick = (e: MouseEvent) => {
+      if (variantRef.current && !variantRef.current.contains(e.target as Node)) {
+        setIsVariantOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', onOutsideClick);
+    return () => document.removeEventListener('mousedown', onOutsideClick);
+  }, [isVariantOpen]);
+
   const handleMouseLeave = () => {
     if (isTG && !isScrambling) {
       setIsTG(false);
@@ -151,14 +165,87 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4, ease: EASE_OUT_EXPO }}
         >
-          <a href={META.resumeUrl} download="satyamtg_resume.pdf" rel="noopener noreferrer" className="btn-primary">
-            résumé.pdf
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </a>
+          {/* ── Split download button ─────────────────────────────────── */}
+          <div ref={variantRef} className="relative inline-flex rounded-full" style={{ boxShadow: '0 4px 20px rgba(109, 40, 217, 0.45)' }}>
+            {/* Left — primary direct download */}
+            <a
+              href={META.resumeUrl}
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-l-full py-3 pl-5 pr-4 text-sm font-semibold text-white transition-colors hover:brightness-110"
+              style={{ background: 'linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%)', fontFamily: "'Space Grotesk', sans-serif" }}
+            >
+              résumé.pdf
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+
+            {/* Divider */}
+            <div className="self-stretch" style={{ width: '1px', background: 'rgba(255,255,255,0.2)' }} />
+
+            {/* Right — variant picker chevron */}
+            <button
+              onClick={() => setIsVariantOpen(v => !v)}
+              className="inline-flex items-center rounded-r-full px-3 py-3 text-white transition-colors hover:brightness-110"
+              style={{ background: 'linear-gradient(135deg, #6D28D9 0%, #5B21B6 100%)', fontFamily: "'Space Grotesk', sans-serif" }}
+              aria-label="Other résumé formats"
+              aria-expanded={isVariantOpen}
+            >
+              <svg
+                width="12" height="12"
+                viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" strokeWidth="2.5"
+                aria-hidden="true"
+                style={{ transition: 'transform 0.2s', transform: isVariantOpen ? 'rotate(180deg)' : 'none' }}
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+
+            {/* Dropdown — all 4 variants */}
+            {isVariantOpen && (
+              <div
+                className="absolute left-0 top-full z-50 mt-2 min-w-[230px] overflow-hidden rounded-2xl"
+                style={{
+                  background: 'rgba(14, 11, 22, 0.97)',
+                  border: '1px solid rgba(208, 188, 255, 0.15)',
+                  backdropFilter: 'blur(20px)',
+                  boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
+                }}
+              >
+                {META.resumeVariants.map((variant, i) => (
+                  <a
+                    key={variant.label}
+                    href={variant.url}
+                    rel="noopener noreferrer"
+                    onClick={() => setIsVariantOpen(false)}
+                    className="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 transition-colors hover:bg-white/5"
+                    style={{
+                      borderBottom: i < META.resumeVariants.length - 1
+                        ? '1px solid rgba(208,188,255,0.08)'
+                        : 'none',
+                    }}
+                  >
+                    <div className="flex flex-col gap-0.5">
+                      <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.875rem', fontWeight: 500, color: '#E8E0F0' }}>
+                        {variant.label}
+                      </span>
+                      {variant.description && (
+                        <span style={{ fontSize: '0.7rem', color: '#8B7BA0' }}>{variant.description}</span>
+                      )}
+                    </div>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#C4B5FD" strokeWidth="2" aria-hidden="true" style={{ flexShrink: 0 }}>
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <a href="#work" className="btn-terminal">
             see work
           </a>
