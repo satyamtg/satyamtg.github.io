@@ -48,6 +48,12 @@ export interface SocialLink {
   icon: 'github' | 'linkedin' | 'twitter' | 'email';
 }
 
+export interface ResumeVariant {
+  label: string;       // e.g. "1-Page · Modern"
+  url: string;
+  description?: string; // e.g. "Best for human readers"
+}
+
 export interface PortfolioMeta {
   name: string;
   firstName: string;
@@ -56,7 +62,8 @@ export interface PortfolioMeta {
   company: string;
   tagline: string;
   email: string;
-  resumeUrl: string;
+  resumeUrl: string;          // primary CTA (1-page modern)
+  resumeVariants: ResumeVariant[];
 }
 
 // ─── Component Props Helpers ─────────────────────────────────────────────────
