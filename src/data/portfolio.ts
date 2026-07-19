@@ -2,15 +2,40 @@ import type { PortfolioMeta, ProjectItem, SocialLink, WorkItem } from '@/types';
 
 // ─── Personal Meta ────────────────────────────────────────────────────────────
 
+// Release asset base URL — update tag if you cut a new release
+const RESUME_RELEASE_BASE = 'https://github.com/satyamtg/satyamtg/releases/latest/download';
+
 export const META: PortfolioMeta = {
   name: 'Satyam Kumar',
   firstName: 'SATYAM',
   lastName: 'KUMAR',
-  role: 'SDE 3',
+  role: 'SDE III',
   company: 'TATA 1mg',
   tagline: 'AI Systems Architect. Building tools that make engineers faster.',
   email: 'io.satyamtg@gmail.com',
-  resumeUrl: '/downloads/satyamtg_resume.pdf',
+  resumeUrl: `${RESUME_RELEASE_BASE}/resume-modern.pdf`,
+  resumeVariants: [
+    {
+      label: '1-Page · Modern',
+      url: `${RESUME_RELEASE_BASE}/resume-modern.pdf`,
+      description: 'Roboto — best for humans & recruiters',
+    },
+    {
+      label: '1-Page · Classic',
+      url: `${RESUME_RELEASE_BASE}/resume-classic.pdf`,
+      description: 'Default font — ATS optimised',
+    },
+    {
+      label: '2-Page CV · Modern',
+      url: `${RESUME_RELEASE_BASE}/cv-modern.pdf`,
+      description: 'Roboto — full detail',
+    },
+    {
+      label: '2-Page CV · Classic',
+      url: `${RESUME_RELEASE_BASE}/cv-classic.pdf`,
+      description: 'Default font — ATS optimised',
+    },
+  ],
 };
 
 // ─── Work Experience ──────────────────────────────────────────────────────────
@@ -19,26 +44,37 @@ export const WORK: WorkItem[] = [
   {
     id: 'tata-1mg',
     title: 'TATA 1mg',
-    subtitle: 'SDE 3 · AI Systems & Platform Engineering',
+    subtitle: 'SDE III · AI Systems & Platform Engineering',
     description:
-      'Joined as SDE 1 building loyalty infrastructure. Promoted twice to SDE 3, now leading GenAI platform adoption for 300+ engineers — including DeputyDev, backed by a published arxiv paper.',
+      'Joined as SDE I building loyalty infrastructure. Promoted to SDE II shipping DeputyDev, then to SDE III leading multi-agent platform engineering — backed by a published arxiv study.',
     period: 'Oct 2022 – Present',
     timeline: [
       {
-        role: 'SDE 3 · AI Systems & Platform Engineering',
-        period: 'Apr 2024 – Present',
+        role: 'SDE III · AI Systems & Platform Engineering',
+        period: 'Apr 2026 – Present',
         highlights: [
-          'Built and shipped DeputyDev — multi-model AI assistant + CLI deployed to 300+ engineers, backed by arxiv research',
-          'Overhauled query-solving, history, and intent systems — speed 3–4x, chat errors 300+ → <100/day',
-          'Built real-time analytics dashboards; refactored backend with Astral + UV + Ruff, cutting setup hours → minutes',
-          'Launched Lab Buddy using Redis vector search; re-architected payments — memory ↓50%, latency ↓30%',
+          'Authored persistent multi-agent orchestration framework (PydanticAI) — adopted as core layer across 6+ internal AI products',
+          'Built autonomous coding-agent infra with async execution, pause/resume checkpoints, real-time streaming',
+          'Extended DeputyDev: Tree-sitter parsing, semantic vector search, multi-provider LLM routing with fallback',
+          'Built 1mg MCP — authenticated MCP server exposing commerce tools (search, cart, checkout, order tracking)',
+          'Designed AI-assisted catalog system: 40+ entity types, human-in-the-loop approval, full audit history',
         ],
       },
       {
-        role: 'SDE 1 → SDE 2 · Backend Engineering',
+        role: 'SDE II · Backend & AI Platform Engineering',
+        period: 'Apr 2024 – Apr 2026',
+        highlights: [
+          'Built and shipped DeputyDev — multi-model AI assistant + CLI deployed to 300+ engineers, backed by arxiv research',
+          'Overhauled query-solving, history, and intent systems — speed 3–4x, chat errors 300+ → <100/day',
+          'Re-architected payments/refunds pipeline — 50% less memory, 30% lower latency; refactored Python backend with UV + Ruff',
+          'Enhanced Care Plan & Loyalty — 6x adoption (200 → 1,200 orders/day), 30× faster third-party integrations',
+        ],
+      },
+      {
+        role: 'SDE I · Backend Engineering',
         period: 'Oct 2022 – Apr 2024',
         highlights: [
-          'Built loyalty/rewards service for fault tolerance at scale; Care Plan adoption 200 → 1,200/day',
+          'Built loyalty/rewards service for fault tolerance across high-traffic order flows',
           'Created third-party partnership onboarding system via clean APIs — saved 30× implementation time',
         ],
       },
