@@ -6,6 +6,15 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.1.1] — 2026-07-19
+
+### Fixed
+- Hero: replaced single download button with split button + variant picker dropdown
+- All 4 résumé variants (1-page/2-page × classic/modern) now accessible from the Hero CTA
+- Dropdown closes on outside click or variant selection
+
+---
+
 ## [1.1.0] — 2026-07-19
 
 ### Added
