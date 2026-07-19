@@ -1,0 +1,24 @@
+src/components/sections/Hero/Hero.tsx
+  s_e7718a03b1e23f::t_4b6de91491fd10 3,12-13,96-107,168-248
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "46bb1743bb2c6c68bc914f0322685df942eec9ba",
+  "prompts": {},
+  "humans": {
+    "h_605604fdd50f3b": {
+      "author": "satyamtg <io.satyamtg@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_e7718a03b1e23f": {
+      "agent_id": {
+        "tool": "DeputyDev",
+        "id": "458456",
+        "model": "CLAUDE_4_POINT_6_SONNET"
+      },
+      "human_author": "satyamtg <io.satyamtg@gmail.com>"
+    }
+  }
+}
